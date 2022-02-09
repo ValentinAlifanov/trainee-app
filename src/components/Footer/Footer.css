@@ -4,20 +4,46 @@
 }
 
 .footer-up-box {
+    margin-right: 425px;
+    margin-left: 425px;
     display: flex;
     align-items: center;
     height: 175px;
+    border-bottom: rgba(255, 255, 255, 0.15) 1px Solid;
 }
 
 .footer-logo-container{
-    margin-left: 425px;
+
 }
 
 .footer-authorization-container {
     margin-left: auto;
-    margin-right: 425px;
 }
 
 .footer-down-box {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    margin-left: 425px;
+    margin-right: 425px;
+}
 
+.footer-down__text1{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.footer-down__text2{
+    margin-left: auto;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.5);
 }
