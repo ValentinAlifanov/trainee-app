@@ -1,0 +1,37 @@
+const DB = [{
+        idPost: "Post001",
+        tag: "#Typography",
+        topic: "Humane Typography in the Digital Age",
+        text: "Human beings aren’t perfect. Perfection is something that will always elude us. There will always be a small part of humanity in everything we do. No matter how small that part, we should make sure that it transcends the limits of the medium. We have to think about the message first. What typeface should we use and why? Does the typeface match the message and what?",
+        data: "Jun 13 · 5 min read",
+        views: "1690",
+        userId:"1",
+        userName:"Janay Wright",
+        PostPhoto: "./Photo1.png",
+        userAvatar: "./user1.png"
+    },
+        {
+            idPost: "Post002",
+            tag: "#Typography",
+            topic: "Humane Typography in the Digital Age",
+            text: "An Essay on Typography by Eric Gill takes the reader back to the year 1930. The year when a conflict between two worlds came to its term. The machines of the industrial world finally took over the handicrafts.",
+            data: "Jun 13 · 5 min read",
+            views: "1690",
+            userId:"1",
+            userName:"Janay Wright",
+            PostPhoto: "",
+            userAvatar: "",
+        },
+    {
+        idPost: "Post003",
+        tag: "#Typography",
+        topic: "Johannes Gutenberg: The Birth of Movable...",
+        text: "An Essay on Typography by Eric Gill takes the reader back to the year 1930. The year when a conflict between two worlds came to its term. The machines of the industrial world finally took over the handicrafts.",
+        data: "Jun 13 · 5 min read",
+        views: "1690",
+        userId:"2",
+        userName:"Anthony J.Yeung",
+        PostPhoto: "",
+        userAvatar: "",
+    }
+]

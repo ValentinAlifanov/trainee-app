@@ -1,0 +1,23 @@
+.footer-box {
+    background: #242424;
+    width: 100%;
+}
+
+.footer-up-box {
+    display: flex;
+    align-items: center;
+    height: 175px;
+}
+
+.footer-logo-container{
+    margin-left: 425px;
+}
+
+.footer-authorization-container {
+    margin-left: auto;
+    margin-right: 425px;
+}
+
+.footer-down-box {
+
+}
