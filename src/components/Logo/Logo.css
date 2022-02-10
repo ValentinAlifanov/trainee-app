@@ -1,0 +1,8 @@
+.logo-box {
+    width: 268px;
+    height: 32px;
+}
+
+.Logo > path{
+    fill: blue;
+}

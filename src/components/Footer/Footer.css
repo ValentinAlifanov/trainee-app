@@ -1,0 +1,50 @@
+.footer-box {
+    background: #242424;
+    width: 100%;
+    margin-top: 213px;
+}
+
+.footer-up-box {
+    margin-right: 425px;
+    margin-left: 425px;
+    display: flex;
+    align-items: center;
+    height: 175px;
+    border-bottom: rgba(255, 255, 255, 0.15) 1px Solid;
+}
+
+.footer-logo-container{
+
+}
+
+.footer-authorization-container {
+    margin-left: auto;
+}
+
+.footer-down-box {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    margin-left: 425px;
+    margin-right: 425px;
+}
+
+.footer-down__text1{
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.footer-down__text2{
+    margin-left: auto;
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.5);
+}
