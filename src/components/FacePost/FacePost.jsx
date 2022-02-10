@@ -4,11 +4,11 @@ import Photo1 from '../../assets/img/Photo1.png';
 import userAvatar1 from '../../assets/img/user1.png';
 import Vector from '../../assets/img/Vector.svg';
 
-export default function FacePost (props) {
+export default function FacePost () {
     return (
                 <div className='FacePost-box'>
                     <div>
-                        <img className='FacePost-Photo' src={Photo1} alt='Photo'/>
+                        <img className='FacePost-Photo' src={Photo1} alt="FacePost-pic"/>
                     </div>
                     <article className='FacePost-read-box'>
                         <div className='FacePost-tag-box'>
@@ -24,7 +24,7 @@ export default function FacePost (props) {
                         </div>
                         <div className='FacePost-info-box'>
                             <div className='FacePost-info-box__user-avatar-box'>
-                                <img className='FacePost-info-box__user-avatar' src={userAvatar1} alt='user-avatar'/>
+                                <img className='FacePost-info-box__user-avatar' src={userAvatar1} alt="user-avatar-FacePost"/>
                             </div>
                             <div className='FacePost-info-box__user-name-box'>
                                 <p className='FacePost-info-box__user-name'> Janay Wright </p>
@@ -32,7 +32,7 @@ export default function FacePost (props) {
                             <div className='FacePost-info-box__dataPost-box'>
                                 <p className='FacePost-info-box__dataPost'> Jun 13 · 5 min read </p>
                             </div>
-                            <img className='FacePost-info-box__vector'  src={Vector} alt='Vector'/>
+                            <img className='FacePost-info-box__vector'  src={Vector} alt="Vector-FacePost"/>
                             <p className='FacePost-info-box__views'> 1690 </p>
                         </div>
                     </article>

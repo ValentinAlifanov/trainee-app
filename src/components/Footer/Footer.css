@@ -1,6 +1,7 @@
 .footer-box {
     background: #242424;
     width: 100%;
+    margin-top: 213px;
 }
 
 .footer-up-box {
@@ -29,7 +30,7 @@
 }
 
 .footer-down__text1{
-    font-family: Inter;
+    font-family: Inter,sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -40,7 +41,7 @@
 
 .footer-down__text2{
     margin-left: auto;
-    font-family: Inter;
+    font-family: Inter,sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
