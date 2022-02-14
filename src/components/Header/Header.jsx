@@ -15,7 +15,6 @@ export default function Header () {
             <div className='header-authorization-container'>
                 <Authorization place='header'/>
             </div>
-
         </header>
     )
 }
