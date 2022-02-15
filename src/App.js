@@ -9,23 +9,33 @@ import MyArticles from "./components/MyArticles/MyArticles";
 import AddArticles from "./components/AddArticles/AddArticles";
 import Profile from "./components/Profile/Profile";
 
+import user1 from './assets/img/user1.png';
+
 import './App.css';
 
-
 function App() {
-    useEffect(() => {
-        localStorage.check = false;
-    });
+    localStorage.check = false;
+    localStorage.userLogIn = '';
 
     const [users, setUsers] = useState(JSON.parse(localStorage.getItem('users')) || []);
     useEffect(() => {
         localStorage.users = JSON.stringify([{
-            userID : '11111111',
+            userID : '1',
             firstName: 'First',
             lastName: 'First',
             email: 'First@gmail.com',
             password: '111111',
-        }])
+            userAvatar: '',
+            description: '',
+        },{
+            userID : '2',
+            firstName: 'Janay',
+            lastName: 'Wright',
+            email: 'JanayWright@gmail.com',
+            password: '111111',
+            userAvatar: user1,
+            description: 'Janay Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    }])
     }, [])
   return (
       <>

@@ -38,15 +38,16 @@ const SignupForm = ({users, setUsers}) => {
         }),
 
         onSubmit: values => {
-            const isUserExist = users.some((user) => user.email === values.email)
+            const isUserExist = users.some((user) => user.email === values.email ? (false) : (user))
 
-            if(isUserExist) {
+            if(!isUserExist) {
                 setErrorUseEmail(true)
             } else {
                 localStorage.setItem('users', JSON.stringify([...users, values]))
                 setUsers([...users, values])
                 setErrorUseEmail(false)
-                localStorage.setItem('check', true);
+                localStorage.setItem('check', 'true');
+                localStorage.setItem('userLogIn', JSON.stringify(isUserExist));
                 navigate('/mainLogIn')
             }
         },
@@ -64,11 +65,11 @@ const SignupForm = ({users, setUsers}) => {
                 {formik.touched.firstName && formik.errors.firstName ? (
                         <div className='create-form__error'>{formik.errors.firstName}</div>
                     ) :
-                    (<div className='create-form__no-error'></div>)}
+                    (<div className='create-form__no-error'> </div>)}
             </div>
 
             <div className='create-form__label-box'>
-                <label className='create-form__label' htmlFor="lastName">Password</label>
+                <label className='create-form__label' htmlFor="lastName">Last Name</label>
                 <input
                     className={`create-form__input ${formik.touched.lastName && formik.errors.lastName ? ('invalid') : ('')}`}
                     id="lastName"
@@ -76,7 +77,7 @@ const SignupForm = ({users, setUsers}) => {
                     {...formik.getFieldProps('lastName')} />
                 {formik.touched.lastName && formik.errors.lastName ? (
                     <div className='create-form__error'>{formik.errors.lastName}</div>
-                ) : <div className='create-form__no-error'></div>}
+                ) : <div className='create-form__no-error'> </div>}
             </div>
             <div className='create-form__label-box'>
                 <label className='create-form__label' htmlFor="email">Email Address</label>
@@ -87,7 +88,7 @@ const SignupForm = ({users, setUsers}) => {
                     {...formik.getFieldProps('email')} />
                 {formik.touched.email && formik.errors.email ? (
                     <div className='create-form__error'>{formik.errors.email}</div>
-                ) : <div className='create-form__no-error'></div>}
+                ) : <div className='create-form__no-error'> </div>}
             </div>
 
             <div className='create-form__label-box'>
@@ -99,13 +100,12 @@ const SignupForm = ({users, setUsers}) => {
                     {...formik.getFieldProps('password')} />
                 {formik.touched.password && formik.errors.password ? (
                     <div className='create-form__error'>{formik.errors.password}</div>
-                ) : <div className='create-form__no-error'></div>}
+                ) : <div className='create-form__no-error'> </div>}
             </div>
             <div className='create-form__error_message'>
                 {errorUseEmail && <p>This email is being used</p>}
             </div>
             <button className='create-form__button' name='button-submit' type="submit">Create Account</button>
-
         </form>
     );
 };

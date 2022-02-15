@@ -32,7 +32,8 @@ const SignupForm = ({users}) => {
             if(isUserData) {
                 if(isUserData.password === values.authPassword) {
                     localStorage.setItem('check', 'true');
-                    navigate('/mainLogIn')
+                    localStorage.setItem('userLogIn', JSON.stringify(isUserData));
+                    navigate('/mainLogIn');
                 }
                 else {
                     setAuthMessageError('Invalid password')
@@ -55,7 +56,7 @@ const SignupForm = ({users}) => {
                     {...authFormik.getFieldProps('authEmail')} />
                 {authFormik.touched.authEmail && authFormik.errors.authEmail ? (
                     <div className='auth-form__error'>{authFormik.errors.authEmail}</div>
-                ) : <div className='auth-form__no-error'></div>}
+                ) : <div className='auth-form__no-error'> </div>}
             </div>
 
             <div className='auth-form__label-box'>
@@ -67,7 +68,7 @@ const SignupForm = ({users}) => {
                     {...authFormik.getFieldProps('authPassword')} />
                 {authFormik.touched.authPassword && authFormik.errors.authPassword ? (
                     <div className='auth-form__error'>{authFormik.errors.authPassword}</div>
-                ) : <div className='auth-form__no-error'></div>}
+                ) : <div className='auth-form__no-error'> </div>}
             </div>
 
             <div className='auth-form__error_message'>

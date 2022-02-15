@@ -1,17 +1,144 @@
-.main-container {
-}
-
-.main-box {
+.profile-box {
     margin-left: 425px;
     margin-right: 425px;
 }
 
-.main-popular-articles{
-    margin-top: 96px;
-    font-family: Playfair Display, sans-serif;
+.profile-title{
+    margin-top: 80px;
+    font-family: Playfair Display,sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 56px;
+    line-height: 56px;
     color: #242424;
 }
+
+.profile-form{
+    margin-top: 64px;
+    display: flex;
+}
+
+.profile-main__photo-box{
+    width: 366px;
+    height: 382px;
+    background: #FBFBFB;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__user-avatar-box{
+    margin-top: 68px;
+    width: 126px;
+    height: 126px;
+}
+
+.profile-user-avatar{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile__change-photo-btn{
+    margin-top: 32px;
+    width: 164px;
+    height: 48px;
+    border: 1px solid #242424;
+    box-sizing: border-box;
+    font-family: IBM Plex Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #242424;
+    cursor: auto;
+}
+
+.profile__delete-photo-btn{
+    margin-top: 24px;
+    font-family: IBM Plex Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #242424;
+    border: none;
+    background: #FBFBFB;
+    cursor: auto;
+}
+
+.profile-info-box{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info-box_line1{
+    display: flex;
+}
+
+.profile-info-box_line1_title{
+    font-family: IBM Plex Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #242424;
+}
+
+.profile-info-box__lastname-box{
+    margin-left: 32px;
+}
+
+.profile-info-box_line1_input{
+    width: 316px;
+    height: 47px;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    font-family: IBM Plex Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #242424;
+}
+
+.profile-info-box__btn{
+    margin-top: 48px;
+    font-family: IBM Plex Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    width: 164px;
+    height: 48px;
+    background: #242424;
+}
+
+.profile-info-box_description{
+    font-family: IBM Plex Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #242424;
+}
+
+.profile-info-box_description-input{
+    width: 664px;
+    height: 155px;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    font-family: IBM Plex Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #242424;
+}
+
