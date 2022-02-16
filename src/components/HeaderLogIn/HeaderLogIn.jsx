@@ -1,19 +1,19 @@
 import React from 'react';
 
 import Logo from '../Logo/Logo';
-import Authorization from '../Authorization/Authorization';
+import LinksLogIn from "../LinksLogIn/LinksLogIn"
 
-import './Header.css';
+import './HeaderLogIn.css';
 
 
-export default function Header () {
+export default function HeaderLogIn () {
     return (
         <header className='header-box'>
             <div className='header-logo-container'>
                 <Logo color='#242424'/>
             </div>
             <div className='header-authorization-container'>
-                <Authorization place='header'/>
+                <LinksLogIn place='header'/>
             </div>
         </header>
     )

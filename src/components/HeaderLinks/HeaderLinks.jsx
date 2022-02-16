@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-import './Authorization.css';
+import './HeaderLinks.css';
 
-export default function Authorization (props) {
+export default function HeaderLinks (props) {
     return (
         <div className={'authorization-box'}>
             <Link to={`/authLogin`} className={`button1-${props.place}`}>Log in</Link>

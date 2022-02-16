@@ -1,22 +1,22 @@
 import React from 'react';
-import './Main.css';
+import './AddArticles.css';
 import FacePost from '../FacePost/FacePost'
 import Post from '../Post/Post'
 import {DB} from "../../DB";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import HeaderLogIn from "../HeaderLogIn/HeaderLogIn";
+import FooterLogIn from "../FooterLogIn/FooterLogIn";
 
-export default function Main () {
+export default function AddArticles () {
 
     return (
         <>
-            <Header />
+            <HeaderLogIn />
             <main className='main-box'>
                 <FacePost />
                 <p className='main-popular-articles'> Popular articles </p>
                 {DB.map(item => <Post key={item.idPost} item={item}/>)}
             </main>
-            <Footer />
+            <FooterLogIn />
         </>
     )
 };
