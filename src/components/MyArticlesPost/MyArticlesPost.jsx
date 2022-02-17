@@ -9,7 +9,7 @@ import './MyAticlesPost.css';
 
 export default function MyArticlesPost ({ post }) {
     let users = JSON.parse(localStorage.getItem('users'))
-    let user = users.find(user => user.userID == post.userID)
+    let user = users.find(user => user.userID === post.userID)
     return (
         <div className='MyArticlesPost-box'>
             <div>
@@ -17,15 +17,13 @@ export default function MyArticlesPost ({ post }) {
             </div>
             <article className='MyArticlesPost-read-box'>
                 <div className='MyArticlesPost-tag-box'>
-                    <span className='MyArticlesPost-tag'>
-                        {post.category}
-                    </span>
+                    <span className='MyArticlesPost-tag' dangerouslySetInnerHTML={{__html: `${post.category}`}}/>
                 </div>
                 <div className='MyArticlesPost-topic-box'>
-                    <span className='MyArticlesPost-topic'> {post.topic} </span>
+                    <span className='MyArticlesPost-topic' dangerouslySetInnerHTML={{__html: `${post.topic}`}}/>
                 </div>
                 <div className='MyArticlesPost-text-box'>
-                    <p className='MyArticlesPost-text'> {post.text} </p>
+                    <p className='MyArticlesPost-text' dangerouslySetInnerHTML={{__html: `${post.text}`}}/>
                 </div>
                 <div className='MyArticlesPost-info-box'>
                     <div className='MyArticlesPost-info-box__user-avatar-box'>

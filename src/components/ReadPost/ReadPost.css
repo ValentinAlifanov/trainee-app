@@ -1,27 +1,32 @@
-.Post-box {
-    margin-top: 56px;
-    display:flex;
-    box-sizing: content-box;
-    width: 100%;
+.readPost-main-box{
+    margin-top: 80px;
+    margin-left: 425px;
+    margin-right: 425px;
+    display: flex;
 }
 
-.Post-Link{
+.readPost__Link-allArticles{
+    min-width: 124px;
+    height: 47px;
+    border: 1px solid #242424;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #242424;
+
+    font-family: IBM Plex Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 15px;
 }
 
-.Post-Photo {
-    width: 367px;
-    height: 260px;
+.readPost__post-box{
+    margin-left: 73px;
 }
 
-.Post-read-box{
-    margin-left: 24px;
-    border-bottom: solid 1px #EBEBEB;
-
-}
-
-.Post-tag-box{
+.readPost-tag-box{
     width: 100px;
     height: 26px;
     background: #F7F7F7;
@@ -31,7 +36,7 @@
     align-items: center;
 }
 
-.Post-tag{
+.readPost-tag{
     font-family: Inter,sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -40,56 +45,61 @@
     color: #8C8C8C;
 }
 
-.Post-topic-box {
-    margin-top: 25px;
-    margin-bottom: 16px;
+.readPost-topic-box{
+    margin-top: 16px;
+    margin-bottom: 32px;
     width: 100%;
 }
 
-.Post-topic{
+.readPost-topic{
     font-family: Playfair Display,sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
-    line-height: 32px;
-    color: #242424;
+    font-size: 48px;
+    line-height: 60px;
+    color: #282828;
 }
 
-.Post-text-box{
-    margin-bottom: 24px;
+.readPost-Photo {
+    width: 100%;
+    height: auto;
+}
+
+.readPost-text-box{
+    margin-top: 32px;
     width: 100%;
 }
 
-.Post-text{
+.readPost-post-text{
     font-family: IBM Plex Sans,sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 26px;
     color: #8C8C8C;
 }
 
-.Post-info-box{
+.readPost-info-box{
     display: flex;
     align-items: center;
 }
 
-.Post-info-box__user-avatar-box{
+.readPost-info-box__user-avatar-box{
     width: 40px;
     height: 40px;
 }
 
-.Post-info-box__user-avatar{
+.readPost-info-box__user-avatar{
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
 
-.Post-info-box__user-name-box {
+.readPost-info-box__user-name-box {
     margin-left: 8px;
 }
 
-.Post-info-box__user-name {
+.readPost-info-box__user-name {
     font-family: IBM Plex Sans Medium,sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -98,11 +108,11 @@
     color: #8C8C8C;
 }
 
-.Post-info-box__dataPost-box{
+.readPost-info-box__dataPost-box{
     margin-left: 24px;
 }
 
-.Post-info-box__dataPost{
+.readPost-info-box__dataPost{
     font-family: IBM Plex Sans,sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -111,11 +121,11 @@
     color: #8C8C8C;
 }
 
-.Post-info-box__vector{
+.readPost-info-box__vector{
     margin-left: 24px;
 }
 
-.Post-info-box__views{
+.readPost-info-box__views{
     margin-left: 8px;
     font-family: IBM Plex Sans,sans-serif;
     font-style: normal;

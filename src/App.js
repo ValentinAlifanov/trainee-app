@@ -8,6 +8,7 @@ import MainLogIn from "./components/MainLogIn/MainLogIn";
 import MyArticles from "./components/MyArticles/MyArticles";
 import AddArticles from "./components/AddArticles/AddArticles";
 import Profile from "./components/Profile/Profile";
+import ReadPost from "./components/ReadPost/ReadPost";
 
 import user1 from './assets/img/user1.png';
 import user2 from './assets/img/user2.png';
@@ -105,6 +106,7 @@ function App() {
                   <Route path="/myArticles" element={<MyArticles />} />
                   <Route path="/addArticles" element={<AddArticles />} />
                   <Route path="/profile" element={<Profile />} />
+                  <Route path={"/readPost/:postID"} element={<ReadPost />} />
               </Routes>
       </>
   )
