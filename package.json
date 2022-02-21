@@ -1,46 +1,37 @@
 {
-  "name": "alifanov_justice",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "draft-convert": "^2.1.12",
-    "draft-js": "^0.11.7",
-    "draftjs-to-html": "^0.9.1",
-    "formik": "^2.2.9",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-draft-wysiwyg": "^1.14.7",
-    "react-router-dom": "^6.2.1",
-    "react-scripts": "5.0.0",
-    "react-svg": "^14.1.10",
-    "web-vitals": "^2.1.4",
-    "yup": "^0.32.11"
-  },
+  "name": "back",
+  "version": "1.0.0",
+  "description": "fullstack app",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node index",
+    "server": "nodemon index",
+    "client-install": "npm install --prefix client",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "keywords": [
+    "express",
+    "react"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "passport": "^0.5.2",
+    "passport-jwt": "^4.0.0",
+    "webpack-dev-server": "^4.7.4"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
   }
 }
