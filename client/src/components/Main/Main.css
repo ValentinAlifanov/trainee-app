@@ -1,0 +1,15 @@
+
+.main-box {
+    margin-left: 425px;
+    margin-right: 425px;
+}
+
+.main-popular-articles{
+    margin-top: 96px;
+    font-family: Playfair Display, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: #242424;
+}

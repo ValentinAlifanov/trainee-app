@@ -1,0 +1,93 @@
+.create-main-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-topic-box{
+    margin-top: 80px;
+}
+
+.create-topic {
+    font-family: Playfair Display,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 56px;
+    color: #242424;
+}
+
+.create-form{
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-form__label-box{
+    margin-bottom: 24px;
+    width: 396px;
+    min-height: 95px;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-form__label {
+    font-family: IBM Plex Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #242424;
+}
+
+.create-form__input{
+    margin-top: 12px;
+    border: 1px solid #8C8C8C;
+    height: 47px;
+}
+
+.create-form__error{
+    min-height: 14px;
+    font-family: IBM Plex Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    color: #CF4949;
+    padding-top: 4px;
+}
+
+.create-form__no-error{
+    min-height: 14px;
+}
+
+.create-form__button{
+    width: 396px;
+    height: 55px;
+    background: #242424;
+    margin-top: 30px;
+    padding: 0;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: IBM Plex ,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.invalid {
+    border: 1px solid #D12312;
+}
+
+.create-form__error_message{
+    height: 40px;
+    color: #CF4949;
+}
