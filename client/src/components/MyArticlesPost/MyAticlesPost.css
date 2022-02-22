@@ -84,7 +84,7 @@
     margin-left: 8px;
 }
 
-.Post-info-box__user-name {
+.MyArticlesPost-info-box__user-name {
     font-family: IBM Plex Sans Medium,sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -97,7 +97,7 @@
     margin-left: 24px;
 }
 
-.Post-info-box__dataPost{
+.MyArticlesPost-info-box__dataPost{
     font-family: IBM Plex Sans,sans-serif;
     font-style: normal;
     font-weight: normal;

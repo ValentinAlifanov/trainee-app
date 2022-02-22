@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5027390f-5337-423e-87b6-d5a31b314723" name="Changes" comment="connected registration and login" />
+    <list default="true" id="5027390f-5337-423e-87b6-d5a31b314723" name="Changes" comment="connected registration and login">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/AddArticles/AddArticles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AddArticles/AddArticles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/AuthLogin/AuthLogin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AuthLogin/AuthLogin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Create/Create.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Create/Create.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Main/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MainLogIn/MainLogIn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MainLogIn/MainLogIn.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MyArticles/MyArticles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyArticles/MyArticles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MyArticlesPost/MyArticlesPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyArticlesPost/MyArticlesPost.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MyArticlesPost/MyAticlesPost.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyArticlesPost/MyAticlesPost.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Post/Post.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Post/Post.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Post/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/readUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/readUsers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Articl.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Articl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/readUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/readUsers.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +70,7 @@
       <workItem from="1645187370759" duration="4563000" />
       <workItem from="1645440274473" duration="2043000" />
       <workItem from="1645449545452" duration="7935000" />
-      <workItem from="1645513789257" duration="995000" />
+      <workItem from="1645513789257" duration="21488000" />
     </task>
     <task id="LOCAL-00001" summary="connected registration and login">
       <created>1645457478842</created>
@@ -66,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645457539860</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="connected registration and login">
+      <created>1645515079967</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645515079967</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -10,13 +10,17 @@ const articleSchema = new Schema({
         type: String,
         required: true,
     },
-        category : {
-            type: String,
-            required: true,
-        },
+    category : {
+        type: String,
+        required: true,
+    },
     user: {
         ref: 'users',
         type: Schema.Types.ObjectId
+    },
+    userName : {
+        type: String,
+        required: true,
     }
 })
 

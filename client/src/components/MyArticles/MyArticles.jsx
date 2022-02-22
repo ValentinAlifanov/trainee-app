@@ -1,20 +1,34 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
+import axios from "axios";
+import {Navigate} from "react-router-dom";
 
 import MyArticlesPost from '../MyArticlesPost/MyArticlesPost'
 import HeaderLogIn from "../HeaderLogIn/HeaderLogIn";
 import FooterLogIn from "../FooterLogIn/FooterLogIn";
-
-import {Navigate} from "react-router-dom";
-
-import './MyArticles.css';
 import noUserAvatar from "../../assets/img/NoUserAvatar.png";
 
-export default function MyArticles () {
+import './MyArticles.css';
 
-    if (localStorage.getItem('check') === 'true') {
-        const postsDB = JSON.parse(localStorage.getItem('posts'))
-        const userLogIn = JSON.parse(localStorage.getItem('userLogIn'))
-        const userPosts = postsDB.filter(post => post.userID === userLogIn.userID);
+
+export default function MyArticles () {
+    const userLogIn = JSON.parse(localStorage.getItem('userLogIn'))
+    const [articles, setArticles] = useState([])
+    const config = {
+        headers: {
+            Authorization: userLogIn.token
+        }
+    }
+
+    useEffect(() => {axios.get(`http://localhost:5000/api/article/${userLogIn.userId}`, config)
+            .then((response) => {
+                setArticles(response.data)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+    }, [])
+
+    if (localStorage.getItem('userLogIn')) {
         return (
             <>
                 <HeaderLogIn />
@@ -27,7 +41,7 @@ export default function MyArticles () {
                         <p className='my-articles__description'>{userLogIn.description}</p>
                     </div>
                     <div>
-                        {userPosts.map(post => <MyArticlesPost key={post.id} post={post}/>)}
+                        {articles.map(post => <MyArticlesPost key={post._id} post={post}/>)}
                     </div>
                 </main>
                 <FooterLogIn />

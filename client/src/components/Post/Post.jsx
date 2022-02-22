@@ -9,14 +9,13 @@ import './Post.css';
 
 
 export default function Post ({ post }) {
-    let users = JSON.parse(localStorage.getItem('users'))
-    let user = users.find(user => user.userID === post.userID)
+
     return (
         <div className='Post-box'>
             <div>
-                <Link to={`/readPost/${post.id}`}>
+                {/*<Link to={`/readPost/${post._id}`}>*/}
                     <img className='Post-Photo' src={Photo} alt="MyArticlesPost"/>
-                </Link>
+                {/*</Link>*/}
             </div>
             <article className='Post-read-box'>
                 <div className='Post-tag-box'>
@@ -32,10 +31,10 @@ export default function Post ({ post }) {
                 </div>
                 <div className='Post-info-box'>
                     <div className='Post-info-box__user-avatar-box'>
-                        <img className='Post-info-box__user-avatar' src={user.userAvatar || noUserAvatar} alt="user-avatar-MyArticlesPost"/>
+                        <img className='Post-info-box__user-avatar' src={noUserAvatar} alt="user-avatar-MyArticlesPost"/>
                     </div>
                     <div className='Post-info-box__user-name-box'>
-                        <span className='Post-info-box__user-name'>{`${user.firstName} ${user.lastName}`}</span>
+                        <span className='Post-info-box__user-name'>{post.userName}</span>
                     </div>
                     <div className='Post-info-box__dataPost-box'>
                         <span className='Post-info-box__dataPost'> Jun 13 · 5 min read </span>

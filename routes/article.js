@@ -5,8 +5,8 @@ const router = express.Router()
 
 router.get('/',controller.getAll)
 
-router.get('/:id', passport.authenticate('jwt', {session:false}),controller.getById)
+router.get('/:id', passport.authenticate('jwt', {session:false}), controller.getById)
 
-router.post('/create', controller.create)
+router.post('/create', passport.authenticate('jwt', {session:false}),controller.create)
 
 module.exports = router

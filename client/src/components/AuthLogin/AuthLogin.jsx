@@ -1,8 +1,9 @@
 import React, { useState} from 'react';
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import axios from 'axios';
+
 
 
 import Header from "../Header/Header";
@@ -12,6 +13,7 @@ import './AuthLogin.css';
 
 const SignupForm = () => {
     let [AuthMessageError, setAuthMessageError] = useState('')
+    const navigate = useNavigate();
 
 
     const authFormik = useFormik({
@@ -30,18 +32,16 @@ const SignupForm = () => {
         }),
 
         onSubmit: values => {
-            console.log(values)
             axios.post('http://localhost:5000/api/auth/login', {
                 email:  values.authEmail,
                 password: values.authPassword
             })
                 .then(function (response) {
-                    console.log(response.data);
                     localStorage.setItem('userLogIn', JSON.stringify(response.data))
-
-                    //navigate('/mainLogIn');
+                    navigate('/mainLogIn');
                 })
                 .catch(function (error) {
+                    console.log(error)
                     setAuthMessageError('Invalid password')
                 });
         },

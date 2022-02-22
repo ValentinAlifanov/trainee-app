@@ -49,13 +49,12 @@ const SignupForm = () => {
                 password: values.password
             })
                 .then(function (response) {
-                    console.log(response.data);
                     localStorage.setItem('userLogIn', JSON.stringify(response.data));
                     navigate('/mainLogIn')
                 })
                 .catch(function (error) {
-                    console.log(error);
                     setErrorUseEmail(true)
+                    console.log(error)
                 });
         },
     });

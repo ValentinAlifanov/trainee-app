@@ -22,8 +22,10 @@ module.exports.getAllByUserId = async function (req,res) {
 
 module.exports.getById = async function (req,res) {
     try {
-        const article = await Articl.findById(req.params.id)
-        res.status(200).json(article)
+        const articles = await Articl.find({
+            user: req.params.id
+        })
+        res.status(200).json(articles)
     } catch (e) {
         errorHandler(res, e)
     }
@@ -38,6 +40,7 @@ module.exports.create = async function (req,res) {
             text: req.body.text,
             category: req.body.category,
             user: req.body.user,
+            userName: req.body.userName
         }).save()
         res.status(201).json(article)
     } catch (e) {
