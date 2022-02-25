@@ -42,19 +42,68 @@
     border-radius: 50%;
 }
 
-.profile__change-photo-btn{
+.profile__change-photo-input{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__change-photo-label{
     margin-top: 32px;
     width: 164px;
     height: 48px;
     border: 1px solid #242424;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.profile-input-file-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.profile-input-file-input {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.profile-input-file-label {
+    cursor: pointer;
+    width: 164px;
+    height: 48px;
+    border: 1px solid #242424;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-family: IBM Plex Sans,sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 16px;
     color: #242424;
-    cursor: auto;
+}
+
+.profile__change-photo-text{
+    font-family: IBM Plex Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #242424;
 }
 
 .profile__delete-photo-btn{
@@ -68,7 +117,7 @@
     color: #242424;
     border: none;
     background: #FBFBFB;
-    cursor: auto;
+    cursor: pointer;
 }
 
 .profile-info-box{

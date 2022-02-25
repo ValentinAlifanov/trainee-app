@@ -34,7 +34,7 @@ export default function MyArticlesPost ({ post }) {
                         <span className='MyArticlesPost-info-box__dataPost'> Jun 13 · 5 min read </span>
                     </div>
                     <img className='MyArticlesPost-info-box__vector' src={Vector} alt="Vector-MyArticlesPost"/>
-                    <span className='MyArticlesPost-info-box__views'> 1690 </span>
+                    <span className='MyArticlesPost-info-box__views'> {post.count} </span>
                 </div>
             </article>
         </div>

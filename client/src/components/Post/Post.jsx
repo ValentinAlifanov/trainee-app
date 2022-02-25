@@ -9,20 +9,19 @@ import './Post.css';
 
 
 export default function Post ({ post }) {
-
     return (
         <div className='Post-box'>
             <div>
-                {/*<Link to={`/readPost/${post._id}`}>*/}
+                <Link to={`/readPost/${post._id}`}>
                     <img className='Post-Photo' src={Photo} alt="MyArticlesPost"/>
-                {/*</Link>*/}
+                </Link>
             </div>
             <article className='Post-read-box'>
                 <div className='Post-tag-box'>
                     <span className='Post-tag' dangerouslySetInnerHTML={{__html: `${post.category}`}}/>
                 </div>
                 <div className='Post-topic-box'>
-                    <Link className='Post-Link' to={`/readPost/${post.id}`}>
+                    <Link className='Post-Link' to={`/readPost/${post._id}`}>
                         <span className='Post-topic' dangerouslySetInnerHTML={{__html: `${post.topic}`}}/>
                     </Link>
                 </div>
@@ -40,7 +39,7 @@ export default function Post ({ post }) {
                         <span className='Post-info-box__dataPost'> Jun 13 · 5 min read </span>
                     </div>
                     <img className='Post-info-box__vector' src={Vector} alt="Vector-MyArticlesPost"/>
-                    <span className='Post-info-box__views'> 1690 </span>
+                    <span className='Post-info-box__views'> {post.count} </span>
                 </div>
             </article>
         </div>

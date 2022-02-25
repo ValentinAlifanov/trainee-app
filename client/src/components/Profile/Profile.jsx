@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 import HeaderLogIn from "../HeaderLogIn/HeaderLogIn";
 import FooterLogIn from "../FooterLogIn/FooterLogIn";
-import {Navigate,useNavigate} from "react-router-dom";
+import {Navigate} from "react-router-dom";
 import {useFormik} from 'formik';
 import noUserAvatar from '../../assets/img/NoUserAvatar.png'
 
@@ -10,41 +10,65 @@ import './Profile.css';
 import axios from "axios";
 
 
-
-
 export default function Profile () {
-    const navigate = useNavigate()
     const userLogIn = JSON.parse(localStorage.getItem('userLogIn'))
     const [user, setUser] = useState([])
+    let [photo, setPhoto] = useState(user.userAvatar)
     useEffect(() => {
         axios.get(`http://localhost:5000/api/readUsers/read/${userLogIn.userId}`)
             .then((response) => {
                 setUser(response.data)
-                console.log(response.data)
+                setPhoto(response.data.userAvatar)
             })
             .catch((error) => {
                 console.log(error)
             })
     },[])
 
+    const convertBase64 = (file) =>
+        new Promise((resolve, reject) => {
+            const fileReader = new FileReader()
+            fileReader.readAsDataURL(file)
+            fileReader.onload = () => {
+                resolve(fileReader.result)
+            }
+            fileReader.onerror = (error) => {
+                reject(error)
+            }
+        })
+
+    async function handleImageChange(e) {
+         e.preventDefault();
+         let reader = new FileReader();
+         let file = e.target.files[0];
+         reader.onloadend = () => {
+            setPhoto(reader.result)}
+        reader.readAsDataURL(file)
+        const base64 = await convertBase64(file)
+        formik.setFieldValue("userAvatar", base64);
+    }
+
     const formik = useFormik({
         initialValues: {
             firstName: user.firstName || '',
             lastName: user.lastName || '',
             description: user.description || '',
+            userAvatar: user.userAvatar || ''
         },
         enableReinitialize: true,
+
         onSubmit: values => {
+            console.log(values)
             const config = {
                 headers: {
                     Authorization: userLogIn.token
                 }
             }
-            // изменить велью POST
-            axios.post('http://localhost:5000/api/article/create', values, config)
+
+            axios.patch(`http://localhost:5000/api/readUsers/update/${userLogIn.userId}`, values, config)
                 .then(function (response) {
                     console.log(response)
-                    navigate('/myArticles')
+                    //navigate('/myArticles')
                 })
                 .catch(function (error) {
                     console.log(error)
@@ -52,16 +76,10 @@ export default function Profile () {
             },
     });
 
-    // const delPhoto = () => {
-    //     userPush.userAvatar = ''
-    //     localStorage.setItem('userLogIn',JSON.stringify(userPush))
-    //     setUserPush(prevState => ({
-    //          ...prevState,
-    //          userAvatar: ''
-    //     }))
-    // }
-    // useEffect(() => {
-    // },[userPush])
+    function delPhoto() {
+        setPhoto('')
+        formik.setFieldValue('userAvatar', '')
+    }
 
     if (localStorage.getItem('userLogIn')) {
         return (
@@ -72,10 +90,15 @@ export default function Profile () {
                     <form onSubmit={formik.handleSubmit} className='profile-form'>
                         <div className='profile-main__photo-box'>
                             <div className='profile__user-avatar-box'>
-                                <img src={noUserAvatar}  className='profile-user-avatar' alt='user-avatar'/>
+                                <img src={photo || noUserAvatar}  className='profile-user-avatar' alt='user-avatar'/>
                             </div>
-                            <button className='profile__change-photo-btn' type="button">Change photo</button>
-                            {/*<button className='profile__delete-photo-btn' type="button" onClick={delPhoto}>Delete photo</button>*/}
+                            <div className='profile-input-file-box'>
+                                    <input type="file" name="userAvatar" id="file" className="profile-input-file-input"
+                                        onChange={(e) => handleImageChange(e)}
+                                />
+                                <label htmlFor="file" className='profile-input-file-label'>Chose a file</label>
+                            </div>
+                            <button className='profile__delete-photo-btn' type="button" onClick={delPhoto}>Delete photo</button>
                         </div>
                         <div className='profile-info-box'>
                             <div className='profile-info-box_line1'>
@@ -98,7 +121,6 @@ export default function Profile () {
                                 <p className='profile-info-box_description'>Description</p>
                                 <textarea className='profile-info-box_description-input' value={formik.initialValues.description}
                                           id="descriptionProfile"
-                                          type="text"
                                           {...formik.getFieldProps('description')}> </textarea>
                             </div>
                             <button type="submit" className='profile-info-box__btn'>Save Changes</button>

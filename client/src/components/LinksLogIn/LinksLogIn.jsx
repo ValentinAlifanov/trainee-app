@@ -6,7 +6,6 @@ import './LinksLogIn.css';
 export default function LinksLogIn ({place}) {
     const navigate = useNavigate();
     const exitClick = () => {
-        localStorage.setItem('check', 'false')
         localStorage.userLogIn = '';
         return navigate('/')
     }

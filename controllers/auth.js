@@ -8,11 +8,10 @@ const errorHandler = require('../utils/errorHandler')
 module.exports.login = async function(req, res) {
     const candidate = await User.findOne({email: req.body.email})
 
-    console.log(candidate)
     if(candidate) {
         // Проверка пароля, пользователь существует
         const passwordResult = bcrypt.compareSync(req.body.password, candidate.password)
-        console.log(passwordResult)
+
         if(passwordResult) {
             // Генерация токена - пароли совпали
             const token = jwt.sign({
@@ -26,7 +25,7 @@ module.exports.login = async function(req, res) {
             })
         }
         else {
-            console.log('f1122222')
+
             res.status(401).json({
                 message: 'Пароли не совпадают. Попробуйте снова.'
             })
