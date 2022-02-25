@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import axios from "axios";
+import {Link} from "react-router-dom";
 
 import Photo1 from '../../assets/img/Photo1.png';
 import Vector from '../../assets/img/Vector.svg';
@@ -15,9 +16,9 @@ export default function FacePost () {
     useEffect(() => {axios.get(`http://localhost:5000/api/article/postPopular`)
         .then((response) => {
             setPopularPost(response.data)
+            console.log(response.data)
             axios.get(`http://localhost:5000/api/readUsers/read/${response.data.user}`)
                 .then((response) => {
-                    console.log(response)
                     setUser(response.data)
                 })
                 .catch((error) => {
@@ -29,11 +30,17 @@ export default function FacePost () {
         })
     }, [])
 
-
     return (
                 <div className='FacePost-box'>
                     <div>
-                        <img className='FacePost-Photo' src={Photo1} alt="FacePost-pic"/>
+                        {localStorage.getItem('userLogIn') ? (
+                            <Link to={`/readPost/${popularPost._id}`}>
+                                <img className='FacePost-Photo' src={Photo1} alt="FacePost-pic"/>
+                            </Link>
+                        ) : (
+                            <img className='FacePost-Photo' src={Photo1} alt="FacePost-pic"/>
+                        )
+                        }
                     </div>
                     <article className='FacePost-read-box'>
                         <div className='FacePost-tag-box'>
@@ -42,17 +49,24 @@ export default function FacePost () {
                             </section>
                         </div>
                         <div className='FacePost-topic-box'>
-                            <p className='FacePost-topic'> {popularPost.topic} </p>
+                            {localStorage.getItem('userLogIn') ? (
+                                <Link to={`/readPost/${popularPost._id}`}>
+                                    <p className='FacePost-topic' dangerouslySetInnerHTML={{__html: `${popularPost.topic}`}} />
+                                </Link>
+                            ) : (
+                                <p className='FacePost-topic' dangerouslySetInnerHTML={{__html: `${popularPost.topic}`}} />
+                            )
+                            }
                         </div>
                         <div className='FacePost-text-box'>
-                            <p className='FacePost-text'> {popularPost.text} </p>
+                            <p className='FacePost-text' dangerouslySetInnerHTML={{__html: `${popularPost.text}`}} />
                         </div>
                         <div className='FacePost-info-box'>
                             <div className='FacePost-info-box__user-avatar-box'>
                                 <img className='FacePost-info-box__user-avatar' src={ user.userAvatar || noUserAvatar } alt="user-avatar-FacePost"/>
                             </div>
                             <div className='FacePost-info-box__user-name-box'>
-                                <p className='FacePost-info-box__user-name'> Janay Wright </p>
+                                <p className='FacePost-info-box__user-name'> {popularPost.userName} </p>
                             </div>
                             <div className='FacePost-info-box__dataPost-box'>
                                 <p className='FacePost-info-box__dataPost'> Jun 13 · 5 min read </p>

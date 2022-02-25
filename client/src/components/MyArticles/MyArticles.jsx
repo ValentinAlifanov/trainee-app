@@ -11,7 +11,7 @@ import './MyArticles.css';
 
 
 export default function MyArticles () {
-    const userLogIn = JSON.parse(localStorage.getItem('userLogIn'))
+    const userLogIn = JSON.parse(localStorage.getItem('userLogIn') || false)
     const [articles, setArticles] = useState([])
     const [user, setUser] = useState({})
     const config = {

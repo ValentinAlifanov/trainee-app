@@ -12,18 +12,25 @@ export default function Post ({ post }) {
     return (
         <div className='Post-box'>
             <div>
-                <Link to={`/readPost/${post._id}`}>
+                {localStorage.getItem('userLogIn') ? (
+                    <Link to={`/readPost/${post._id}`}>
+                        <img className='Post-Photo' src={Photo} alt="MyArticlesPost"/>
+                    </Link>
+                ) : (
                     <img className='Post-Photo' src={Photo} alt="MyArticlesPost"/>
-                </Link>
+                )
+                }
             </div>
             <article className='Post-read-box'>
                 <div className='Post-tag-box'>
                     <span className='Post-tag' dangerouslySetInnerHTML={{__html: `${post.category}`}}/>
                 </div>
                 <div className='Post-topic-box'>
+                    {localStorage.getItem('userLogIn') ? (
                     <Link className='Post-Link' to={`/readPost/${post._id}`}>
                         <span className='Post-topic' dangerouslySetInnerHTML={{__html: `${post.topic}`}}/>
-                    </Link>
+                    </Link>) :
+                        (<span className='Post-topic' dangerouslySetInnerHTML={{__html: `${post.topic}`}}/>)}
                 </div>
                 <div className='Post-text-box'>
                     <p className='Post-text' dangerouslySetInnerHTML={{__html: `${post.text}`}}/>

@@ -12,8 +12,8 @@ import './MainLogIn.css';
 
 export default function MainLogIn () {
     const [articles, setArticles] = useState([])
-
     useEffect(() => {
+        if (localStorage.getItem('userLogIn')) {
         axios.get('http://localhost:5000/api/article')
             .then((response) => {
                 setArticles(response.data)
@@ -21,10 +21,9 @@ export default function MainLogIn () {
             .catch((error) => {
                 console.log(error)
             })
-    }, [])
-
+    }}, [])
     if (localStorage.getItem('userLogIn')) {
-        return (
+    return (
             <>
                 <HeaderLogIn />
                 <main className='main-box'>

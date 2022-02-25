@@ -11,18 +11,20 @@ import axios from "axios";
 
 
 export default function Profile () {
-    const userLogIn = JSON.parse(localStorage.getItem('userLogIn'))
+    const userLogIn = JSON.parse(localStorage.getItem('userLogIn') || false)
     const [user, setUser] = useState([])
     let [photo, setPhoto] = useState(user.userAvatar)
     useEffect(() => {
-        axios.get(`http://localhost:5000/api/readUsers/read/${userLogIn.userId}`)
-            .then((response) => {
-                setUser(response.data)
-                setPhoto(response.data.userAvatar)
-            })
-            .catch((error) => {
-                console.log(error)
-            })
+        if(userLogIn) {
+            axios.get(`http://localhost:5000/api/readUsers/read/${userLogIn.userId}`)
+                .then((response) => {
+                    setUser(response.data)
+                    setPhoto(response.data.userAvatar)
+                })
+                .catch((error) => {
+                    console.log(error)
+                })
+        }
     },[])
 
     const convertBase64 = (file) =>
