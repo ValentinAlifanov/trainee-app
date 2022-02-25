@@ -7,7 +7,7 @@ import noUserAvatar from '../../assets/img/NoUserAvatar.png'
 import './MyAticlesPost.css';
 
 
-export default function MyArticlesPost ({ post }) {
+export default function MyArticlesPost ({ post, user }) {
     return (
         <div className='MyArticlesPost-box'>
             <div>
@@ -25,7 +25,7 @@ export default function MyArticlesPost ({ post }) {
                 </div>
                 <div className='MyArticlesPost-info-box'>
                     <div className='MyArticlesPost-info-box__user-avatar-box'>
-                        <img className='MyArticlesPost-info-box__user-avatar' src={noUserAvatar} alt="user-avatar-MyArticlesPost"/>
+                        <img className='MyArticlesPost-info-box__user-avatar' src={user.userAvatar || noUserAvatar} alt="user-avatar-MyArticlesPost"/>
                     </div>
                     <div className='MyArticlesPost-info-box__user-name-box'>
                         <span className='MyArticlesPost-info-box__user-name'>{`${post.userName}`}</span>

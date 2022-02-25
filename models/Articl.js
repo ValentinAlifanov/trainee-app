@@ -23,8 +23,8 @@ const articleSchema = new Schema({
         required: true,
     },
     count : {
-        type: String,
-        default: "0"
+        type: Number,
+        default: 0
     }
 })
 

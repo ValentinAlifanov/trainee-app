@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5027390f-5337-423e-87b6-d5a31b314723" name="Changes" comment="connected v.1">
+    <list default="true" id="5027390f-5337-423e-87b6-d5a31b314723" name="Changes" comment="completed v.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/LinksLogIn/LinksLogIn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/LinksLogIn/LinksLogIn.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Main/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/FacePost/FacePost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/FacePost/FacePost.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MyArticles/MyArticles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyArticles/MyArticles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/MyArticlesPost/MyArticlesPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyArticlesPost/MyArticlesPost.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MyArticlesPost/MyAticlesPost.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyArticlesPost/MyAticlesPost.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Post/Post.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Profile/Profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Profile/Profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/ReadPost/ReadPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ReadPost/ReadPost.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/readUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/readUsers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Articl.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Articl.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/readUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/readUsers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +71,7 @@
       <workItem from="1645685134982" duration="7709000" />
       <workItem from="1645695030080" duration="14490000" />
       <workItem from="1645711549025" duration="3235000" />
-      <workItem from="1645775727776" duration="6922000" />
+      <workItem from="1645775727776" duration="16031000" />
     </task>
     <task id="LOCAL-00001" summary="connected registration and login">
       <created>1645457478842</created>
@@ -108,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645540101444</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="completed v.1">
+      <created>1645784063790</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1645784063790</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +129,7 @@
     <MESSAGE value="connected registration and login" />
     <MESSAGE value="connected all pages" />
     <MESSAGE value="connected v.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="connected v.1" />
+    <MESSAGE value="completed v.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed v.1" />
   </component>
 </project>

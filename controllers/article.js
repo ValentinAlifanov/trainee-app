@@ -1,6 +1,7 @@
 const Articl = require('../models/Articl')
 const errorHandler = require('../utils/errorHandler')
 
+
 module.exports.getAll = async function (req,res) {
     try {
         const articles = await Articl.find()
@@ -58,12 +59,22 @@ module.exports.getOne = async function (req,res) {
 
 module.exports.update = async function (req,res) {
     try{
-            const article = await Articl.findOneAndUpdate(
-                {_id: req.params.id},
-                {
-                    count: req.body.count
-                })
+        const article = await Articl.findOneAndUpdate(
+            {_id: req.params.id},
+            {
+                count: req.body.count
+            })
         res.status(201).json(article)
+    } catch (e) {
+        errorHandler(res, e)
+    }
+}
+
+module.exports.getPopular = async function (req,res) {
+    try {
+        const popular = await Articl.find({}).sort('-count').exec()
+        console.log(popular)
+        res.status(200).json(popular[0])
     } catch (e) {
         errorHandler(res, e)
     }

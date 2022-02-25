@@ -30,7 +30,7 @@ export default function ReadPost() {
 
 
     function plusOneVisit(article) {
-        const count = Number(article.count) + 1
+        const count = article.count + 1
         console.log(article)
         axios.patch(`http://localhost:5000/api/article/update/${postIDReading.postID}`,
             {count: count})
@@ -74,7 +74,7 @@ export default function ReadPost() {
                                 <span className='readPost-info-box__dataPost'> Jun 13 · 5 min read </span>
                             </div>
                             <img className='readPost-info-box__vector' src={Vector} alt="Vector-MyArticlesPost"/>
-                            <span className='readPost-info-box__views'> {article.count} </span>
+                            <span className='readPost-info-box__views'> {article.count + 1} </span>
                         </div>
                     </div>
                 </main>
