@@ -15,7 +15,6 @@ module.exports.read = async function(req, res) {
 
 module.exports.update = async function (req,res) {
     try{
-        console.log(req.body)
         const user = await User.findOneAndUpdate(
             {_id: req.params.id},
             {

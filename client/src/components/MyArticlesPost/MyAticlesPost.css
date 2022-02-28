@@ -119,3 +119,8 @@
     color: #8C8C8C;
     margin-left: 8px;
 }
+
+.MyArticlesPost-Link{
+    text-decoration: none;
+    color: #242424;
+}

@@ -3,13 +3,14 @@ import axios from "axios";
 
 import FacePost from '../FacePost/FacePost'
 import Post from '../Post/Post'
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 
 import './Main.css';
 
 export default function Main () {
     const [articles, setArticles] = useState([])
+    const [popularPost, setPopularPost] = useState({})
+
+    const allArticles = articles.filter((article) => article._id !== popularPost._id)
 
     useEffect(() => {
      axios.get('http://localhost:5000/api/article')
@@ -22,14 +23,14 @@ export default function Main () {
     }, [])
 
     return (
-        <>
-            <Header />
-            <main className='main-box'>
-                <FacePost />
-                <p className='main-popular-articles'> Popular articles </p>
-                {articles.length > 0 && articles.map(post => <Post key={post._id} post={post}/>)}
-            </main>
-            <Footer />
-        </>
+        <main className='main-box'>
+            <div className='main-container container'>
+                <FacePost popularPost={popularPost} setPopularPost={setPopularPost}/>
+                <div className='main-popular-articles-box'>
+                    <p className='main-popular-articles'> Popular articles </p>
+                </div>
+                {allArticles.length > 0 && allArticles.map(post => <Post key={post._id} post={post}/>)}
+            </div>
+        </main>
     )
 };

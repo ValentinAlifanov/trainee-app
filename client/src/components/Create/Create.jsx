@@ -1,20 +1,19 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import {useFormik} from 'formik';
 import * as Yup from 'yup';
 import {useNavigate} from "react-router-dom";
 import axios from "axios";
 
-
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
-
+import {UserAuthContext} from "../../App";
 
 import './Create.css';
+
 
 
 const SignupForm = () => {
     const [errorUseEmail, setErrorUseEmail] = useState(false)
     const navigate = useNavigate();
+    const { setUserAuth } = useContext(UserAuthContext);
 
     const formik = useFormik({
         initialValues: {
@@ -50,11 +49,11 @@ const SignupForm = () => {
             })
                 .then(function (response) {
                     localStorage.setItem('userLogIn', JSON.stringify(response.data));
-                    navigate('/mainLogIn')
+                    setUserAuth(true)
+                    navigate('/')
                 })
-                .catch(function (error) {
+                .catch(function () {
                     setErrorUseEmail(true)
-                    console.log(error)
                 });
         },
     });
@@ -62,8 +61,7 @@ const SignupForm = () => {
         <form className='create-form' onSubmit={formik.handleSubmit}>
             <div className='create-form__label-box'>
                 <label className="create-form__label" htmlFor="firstName">First name</label>
-                <input
-                    className={`create-form__input ${formik.touched.firstName && formik.errors.firstName ? ('invalid') : ('')}`}
+                <input className={`create-form__input ${formik.touched.firstName && formik.errors.firstName ? ('invalid') : ('')}`}
                     id="firstName"
                     type="text"
                     {...formik.getFieldProps('firstName')}
@@ -76,8 +74,7 @@ const SignupForm = () => {
 
             <div className='create-form__label-box'>
                 <label className='create-form__label' htmlFor="lastName">Last Name</label>
-                <input
-                    className={`create-form__input ${formik.touched.lastName && formik.errors.lastName ? ('invalid') : ('')}`}
+                <input className={`create-form__input ${formik.touched.lastName && formik.errors.lastName ? ('invalid') : ('')}`}
                     id="lastName"
                     type="text"
                     {...formik.getFieldProps('lastName')} />
@@ -87,8 +84,7 @@ const SignupForm = () => {
             </div>
             <div className='create-form__label-box'>
                 <label className='create-form__label' htmlFor="email">Email Address</label>
-                <input
-                    className={`create-form__input ${formik.touched.email && formik.errors.email ? ('invalid') : ('')}`}
+                <input className={`create-form__input ${formik.touched.email && formik.errors.email ? ('invalid') : ('')}`}
                     id="email"
                     type="email"
                     {...formik.getFieldProps('email')} />
@@ -99,8 +95,7 @@ const SignupForm = () => {
 
             <div className='create-form__label-box'>
                 <label className='create-form__label' htmlFor="password">Password</label>
-                <input
-                    className={`create-form__input ${formik.touched.password && formik.errors.password ? ('invalid') : ('')}`}
+                <input className={`create-form__input ${formik.touched.password && formik.errors.password ? ('invalid') : ('')}`}
                     id="password"
                     type="password"
                     {...formik.getFieldProps('password')} />
@@ -119,14 +114,12 @@ const SignupForm = () => {
 export default function Create() {
     return (
         <>
-            <Header />
             <main className='create-main-box'>
                 <div className='create-topic-box'>
                     <section className='create-topic'>Create your free account</section>
                 </div>
                 <SignupForm />
             </main>
-            <Footer />
         </>
     )
 }

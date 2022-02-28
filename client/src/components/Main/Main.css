@@ -1,7 +1,19 @@
 
 .main-box {
-    margin-left: 425px;
-    margin-right: 425px;
+    display: flex;
+    align-items: center;
+}
+
+.main-popular-articles-box{
+    width: 100%;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .main-popular-articles{

@@ -73,7 +73,6 @@ module.exports.update = async function (req,res) {
 module.exports.getPopular = async function (req,res) {
     try {
         const popular = await Articl.find({}).sort('-count').exec()
-        console.log(popular)
         res.status(200).json(popular[0])
     } catch (e) {
         errorHandler(res, e)

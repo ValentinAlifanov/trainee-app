@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {NavLink, useNavigate} from "react-router-dom";
+
+import {UserAuthContext} from "../../App";
 
 import './LinksLogIn.css';
 
 export default function LinksLogIn ({place}) {
+    const { setUserAuth } = useContext(UserAuthContext);
     const navigate = useNavigate();
     const exitClick = () => {
         localStorage.userLogIn = '';
+        setUserAuth(false)
         return navigate('/')
     }
 
@@ -31,23 +35,37 @@ export default function LinksLogIn ({place}) {
             borderBottom: "none",
             color: '#FFFFFF',
         });
+
+    const links = [
+        {
+            path : '/',
+            text : 'All articles'
+        },
+        {
+            path : '/myArticles',
+            text : 'My articles'
+        },
+        {
+            path : '/addArticles',
+            text : 'Add article'
+        },
+        {
+            path : '/profile',
+            text : 'Profile'
+        },
+
+    ]
+
     return (
-        <nav className={'link-box'}>
+        <nav className='link-box'>
             <ul className='ul-header-login'>
-                <li className='li-header-login'>
-                    <NavLink to={`/mainLogIn`} style={({ isActive }) => isActive ? activeStyle : noActiveStyle}>All articles</NavLink>
-                </li>
-                <li className='li-header-login'>
-                    <NavLink to={`/myArticles`} style={({ isActive }) => isActive ? activeStyle : noActiveStyle}>My articles</NavLink>
-                </li>
-                <li className='li-header-login'>
-                    <NavLink to={`/addArticles`} style={({ isActive }) => isActive ? activeStyle : noActiveStyle}>Add article</NavLink>
-                </li>
-                <li className='li-header-login'>
-                    <NavLink to={`/profile`} style={({ isActive }) => isActive ? activeStyle : noActiveStyle}>Profile</NavLink>
-                </li>
+                {links.map(item =>
+                    <li className='li-header-login' key={item.path}>
+                        <NavLink to={item.path} style={({ isActive }) => isActive ? activeStyle : noActiveStyle} >{item.text}</NavLink>
+                    </li>
+                )}
             </ul>
-            <button className={`button-login-${place}`} onClick={(exitClick)} >Logout</button>
+            <button className={`button-login-${place}`} onClick={exitClick} >Logout</button>
         </nav>
     )
 }

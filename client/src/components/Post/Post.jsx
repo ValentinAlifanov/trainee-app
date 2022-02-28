@@ -1,18 +1,19 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import {Link} from "react-router-dom";
 
 import Vector from '../../assets/img/Vector.svg';
 import noUserAvatar from '../../assets/img/NoUserAvatar.png'
 import Photo from '../../assets/img/Photo1.png'
 
+import {UserAuthContext} from "../../App";
 import './Post.css';
 
-
 export default function Post ({ post }) {
+    const { userAuth } = useContext(UserAuthContext);
     return (
         <div className='Post-box'>
             <div>
-                {localStorage.getItem('userLogIn') ? (
+                {userAuth ? (
                     <Link to={`/readPost/${post._id}`}>
                         <img className='Post-Photo' src={Photo} alt="MyArticlesPost"/>
                     </Link>
@@ -26,7 +27,7 @@ export default function Post ({ post }) {
                     <span className='Post-tag' dangerouslySetInnerHTML={{__html: `${post.category}`}}/>
                 </div>
                 <div className='Post-topic-box'>
-                    {localStorage.getItem('userLogIn') ? (
+                    {userAuth ? (
                     <Link className='Post-Link' to={`/readPost/${post._id}`}>
                         <span className='Post-topic' dangerouslySetInnerHTML={{__html: `${post.topic}`}}/>
                     </Link>) :

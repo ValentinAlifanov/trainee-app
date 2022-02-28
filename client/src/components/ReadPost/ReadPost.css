@@ -1,7 +1,8 @@
 .readPost-main-box{
     margin-top: 80px;
-    margin-left: 425px;
-    margin-right: 425px;
+}
+
+.readPost-main-container{
     display: flex;
 }
 

@@ -1,9 +1,9 @@
 .my-articles-main-box {
     margin-top: 80px;
-    margin-left: 425px;
-    margin-right: 425px;
-
+}
+.my-articles-main-container{
     display: flex;
+    width: 100%;
 }
 
 .my-articles__photo-box{

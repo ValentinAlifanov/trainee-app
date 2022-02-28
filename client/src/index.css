@@ -28,7 +28,7 @@ body {
 }
 
 header {
-  flex-shrink: 0;
+  flex: 0 0 auto;
 }
 
 
@@ -37,5 +37,5 @@ main{
 }
 
 footer {
-  flex-shrink: 0;
+  flex: 0 0 auto;
 }

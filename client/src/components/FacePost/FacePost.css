@@ -9,6 +9,7 @@
 }
 
 .FacePost-read-box{
+    position:relative;
     margin-left: 24px;
     border-bottom: solid 1px #EBEBEB;
 }
@@ -33,7 +34,6 @@
 }
 
 .FacePost-topic-box {
-    width: 460px;
 }
 
 .FacePost-topic{
@@ -60,6 +60,9 @@
 .FacePost-info-box{
     display: flex;
     align-items: center;
+    position:absolute;
+    margin-bottom: 25px;
+    bottom:0;
 }
 
 .FacePost-info-box__user-avatar-box{
@@ -111,4 +114,9 @@
     font-size: 12px;
     line-height: 12px;
     color: #8C8C8C;
+}
+
+.FacePost-Link{
+    text-decoration: none;
+    color: #242424;
 }

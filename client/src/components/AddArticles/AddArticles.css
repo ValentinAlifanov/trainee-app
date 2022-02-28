@@ -1,6 +1,5 @@
 .add-articles-main-box {
-    margin-left: 425px;
-    margin-right: 425px;
+    display: flex;
 }
 
 .add-articles-title {

@@ -1,19 +1,18 @@
-import React, { useState} from 'react';
+import React, {useContext, useState} from 'react';
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import {Link, useNavigate} from "react-router-dom";
 import axios from 'axios';
 
-
-
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import {UserAuthContext} from "../../App";
 
 import './AuthLogin.css';
+
 
 const SignupForm = () => {
     let [AuthMessageError, setAuthMessageError] = useState('')
     const navigate = useNavigate();
+    const { setUserAuth } = useContext(UserAuthContext);
 
 
     const authFormik = useFormik({
@@ -38,10 +37,10 @@ const SignupForm = () => {
             })
                 .then(function (response) {
                     localStorage.setItem('userLogIn', JSON.stringify(response.data))
-                    navigate('/mainLogIn');
+                    setUserAuth(true)
+                    navigate('/');
                 })
-                .catch(function (error) {
-                    console.log(error)
+                .catch(function () {
                     setAuthMessageError('Invalid password')
                 });
         },
@@ -50,8 +49,7 @@ const SignupForm = () => {
         <form className='auth-form' onSubmit={authFormik.handleSubmit}>
             <div className='auth-form__label-box'>
                 <label className='auth-form__label' htmlFor="authEmail">Email Address</label>
-                <input
-                    className={`auth-form__input ${authFormik.touched.authEmail && authFormik.errors.authEmail ? ('invalid') : ('')}`}
+                <input className={`auth-form__input ${authFormik.touched.authEmail && authFormik.errors.authEmail ? ('invalid') : ('')}`}
                     id="authEmail"
                     type="email"
                     {...authFormik.getFieldProps('authEmail')} />
@@ -75,7 +73,7 @@ const SignupForm = () => {
             <div className='auth-form__error_message'>
                 <p>{AuthMessageError}</p>
             </div>
-            <button className='auth-form__button' name='auth-button-submit' type="submit">Create Account</button>
+            <button className='auth-form__button' name='auth-button-submit' type="submit">Log In</button>
 
         </form>
     );
@@ -84,7 +82,6 @@ const SignupForm = () => {
 export default function AuthLogin () {
         return (
             <>
-                <Header/>
                 <main className='auth-main-box'>
                     <div className='auth-topic-box'>
                         <section className='auth-topic'>Log in to your account</section>
@@ -95,7 +92,6 @@ export default function AuthLogin () {
                             <Link to={`/create`} className='auth-signature-link'>Create one</Link></span>
                     </div>
                 </main>
-                <Footer />
             </>
         )
     }
