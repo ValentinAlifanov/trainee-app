@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5027390f-5337-423e-87b6-d5a31b314723" name="Changes" comment="completed v4 1280 completed">
+    <list default="true" id="5027390f-5337-423e-87b6-d5a31b314723" name="Changes" comment="completed v6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Profile/Profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Profile/Profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/FacePost/FacePost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/FacePost/FacePost.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +14,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="completed_v3" />
+        <entry key="$PROJECT_DIR$" value="completed_v4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,7 +71,7 @@
       <workItem from="1645711549025" duration="3235000" />
       <workItem from="1645775727776" duration="20530000" />
       <workItem from="1646033008158" duration="26644000" />
-      <workItem from="1646121389738" duration="5490000" />
+      <workItem from="1646121389738" duration="10383000" />
     </task>
     <task id="LOCAL-00001" summary="connected registration and login">
       <created>1645457478842</created>
@@ -129,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646062577677</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="completed v6">
+      <created>1646126924516</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1646126924516</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +161,7 @@
     <MESSAGE value="completed v.2" />
     <MESSAGE value="completed v.3" />
     <MESSAGE value="completed v4 1280 completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed v4 1280 completed" />
+    <MESSAGE value="completed v6" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed v6" />
   </component>
 </project>

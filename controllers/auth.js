@@ -7,11 +7,9 @@ const errorHandler = require('../utils/errorHandler')
 
 module.exports.login = async function(req, res) {
     const candidate = await User.findOne({email: req.body.email})
-
     if(candidate) {
         // Проверка пароля, пользователь существует
         const passwordResult = bcrypt.compareSync(req.body.password, candidate.password)
-
         if(passwordResult) {
             // Генерация токена - пароли совпали
             const token = jwt.sign({
@@ -42,7 +40,8 @@ module.exports.login = async function(req, res) {
 module.exports.register = async function (req,res) {
     try {
         const candidate = await User.findOne({email: req.body.email})
-        if(candidate) {
+        console.log(candidate)
+        if(candidate !== null) {
             // Проверка на существование пользователя
             res.status(409).json({
                 message: 'Такой email уже занят. Попробуйте другой.'
@@ -58,13 +57,15 @@ module.exports.register = async function (req,res) {
                 firstName: req.body.firstName,
                 lastName: req.body.lastName
             })
+            console.log(user)
             const token = jwt.sign({
                 email: user.email,
                 userId: user._id
             }, keys.jwt, {expiresIn: 60 * 60})
             res.status(202).json({
                 token: `Bearer ${token}`,
-                userId: user._id
+                userId: user._id,
+                userName: `${user.firstName} ${user.lastName}`
             })
         }
     } catch (e) {

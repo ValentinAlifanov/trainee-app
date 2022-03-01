@@ -22,6 +22,7 @@ export default function FacePost ({ popularPost, setPopularPost }) {
                 axios.get(`http://localhost:5000/api/readUsers/read/${response.data.user}`)
                     .then((response) => {
                         setUser(response.data)
+                        // return() => {setUser({})}
                     })
                     .catch((error) => {
                         console.log(error)
