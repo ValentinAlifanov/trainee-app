@@ -23,7 +23,6 @@ module.exports.login = async function(req, res) {
             })
         }
         else {
-
             res.status(401).json({
                 message: 'Пароли не совпадают. Попробуйте снова.'
             })
