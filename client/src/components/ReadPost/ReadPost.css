@@ -1,0 +1,137 @@
+.readPost-main-box{
+    margin-top: 80px;
+}
+
+.readPost-main-container{
+    display: flex;
+}
+
+.readPost__Link-allArticles{
+    min-width: 124px;
+    height: 47px;
+    border: 1px solid #242424;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #242424;
+
+    font-family: IBM Plex Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 15px;
+}
+
+.readPost__post-box{
+    margin-left: 73px;
+}
+
+.readPost-tag-box{
+    width: 100px;
+    height: 26px;
+    background: #F7F7F7;
+    border-radius: 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.readPost-tag{
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: #8C8C8C;
+}
+
+.readPost-topic-box{
+    margin-top: 16px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.readPost-topic{
+    font-family: Playfair Display,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #282828;
+}
+
+.readPost-Photo {
+    width: 100%;
+    height: auto;
+}
+
+.readPost-text-box{
+    margin-top: 32px;
+    width: 100%;
+}
+
+.readPost-post-text{
+    font-family: IBM Plex Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #8C8C8C;
+}
+
+.readPost-info-box{
+    display: flex;
+    align-items: center;
+}
+
+.readPost-info-box__user-avatar-box{
+    width: 40px;
+    height: 40px;
+}
+
+.readPost-info-box__user-avatar{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.readPost-info-box__user-name-box {
+    margin-left: 8px;
+}
+
+.readPost-info-box__user-name {
+    font-family: IBM Plex Sans Medium,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #8C8C8C;
+}
+
+.readPost-info-box__dataPost-box{
+    margin-left: 24px;
+}
+
+.readPost-info-box__dataPost{
+    font-family: IBM Plex Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: #8C8C8C;
+}
+
+.readPost-info-box__vector{
+    margin-left: 24px;
+}
+
+.readPost-info-box__views{
+    margin-left: 8px;
+    font-family: IBM Plex Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: #8C8C8C;
+}

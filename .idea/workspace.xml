@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5027390f-5337-423e-87b6-d5a31b314723" name="Changes" comment="completed v6.1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="completed_v4" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="25HcI3sVnJbREGMykk3QAsVxuJV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5027390f-5337-423e-87b6-d5a31b314723" name="Changes" comment="" />
+      <created>1645187369476</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645187369476</updated>
+      <workItem from="1645187370759" duration="4563000" />
+      <workItem from="1645440274473" duration="2043000" />
+      <workItem from="1645449545452" duration="7935000" />
+      <workItem from="1645513789257" duration="21882000" />
+      <workItem from="1645685134982" duration="7709000" />
+      <workItem from="1645695030080" duration="14490000" />
+      <workItem from="1645711549025" duration="3235000" />
+      <workItem from="1645775727776" duration="20530000" />
+      <workItem from="1646033008158" duration="26644000" />
+      <workItem from="1646121389738" duration="11066000" />
+    </task>
+    <task id="LOCAL-00001" summary="connected registration and login">
+      <created>1645457478842</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1645457478842</updated>
+    </task>
+    <task id="LOCAL-00002" summary="connected registration and login">
+      <created>1645457539860</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645457539860</updated>
+    </task>
+    <task id="LOCAL-00003" summary="connected registration and login">
+      <created>1645515079967</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645515079967</updated>
+    </task>
+    <task id="LOCAL-00004" summary="connected all pages">
+      <created>1645540101444</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1645540101444</updated>
+    </task>
+    <task id="LOCAL-00005" summary="completed v.1">
+      <created>1645784063790</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1645784063790</updated>
+    </task>
+    <task id="LOCAL-00006" summary="completed v.2">
+      <created>1645796726391</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1645796726391</updated>
+    </task>
+    <task id="LOCAL-00007" summary="completed v.3">
+      <created>1645801022292</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1645801022292</updated>
+    </task>
+    <task id="LOCAL-00008" summary="completed v4 1280 completed">
+      <created>1646062577677</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1646062577677</updated>
+    </task>
+    <task id="LOCAL-00009" summary="completed v6">
+      <created>1646126924516</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1646126924516</updated>
+    </task>
+    <task id="LOCAL-00010" summary="completed v6.1">
+      <created>1646137461741</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1646137461741</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="connected registration and login" />
+    <MESSAGE value="connected all pages" />
+    <MESSAGE value="connected v.1" />
+    <MESSAGE value="completed v.1" />
+    <MESSAGE value="completed v.2" />
+    <MESSAGE value="completed v.3" />
+    <MESSAGE value="completed v4 1280 completed" />
+    <MESSAGE value="completed v6" />
+    <MESSAGE value="completed v6.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed v6.1" />
+  </component>
+</project>
