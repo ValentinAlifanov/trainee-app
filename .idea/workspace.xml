@@ -1,44 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5027390f-5337-423e-87b6-d5a31b314723" name="Changes" comment="completed v3">
+    <list default="true" id="5027390f-5337-423e-87b6-d5a31b314723" name="Changes" comment="completed v4 1280 completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/AddArticles/AddArticles.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AddArticles/AddArticles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/AddArticles/AddArticles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AddArticles/AddArticles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/AuthLogin/AuthLogin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AuthLogin/AuthLogin.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Create/Create.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Create/Create.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/FacePost/FacePost.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/FacePost/FacePost.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/FacePost/FacePost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/FacePost/FacePost.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Footer/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/FooterLogIn/FooterLogIn.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/FooterLogIn/FooterLogIn.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/HeaderLogIn/HeaderLogIn.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/HeaderLogIn/HeaderLogIn.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/LinksLogIn/LinksLogIn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/LinksLogIn/LinksLogIn.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Logo/Logo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Logo/Logo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Main/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Main/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MainLogIn/MainLogIn.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MainLogIn/MainLogIn.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MyArticles/MyArticles.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyArticles/MyArticles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MyArticles/MyArticles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyArticles/MyArticles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MyArticlesPost/MyArticlesPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyArticlesPost/MyArticlesPost.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MyArticlesPost/MyAticlesPost.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyArticlesPost/MyAticlesPost.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Post/Post.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Post/Post.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Post/Post.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Profile/Profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Profile/Profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ReadPost/ReadPost.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ReadPost/ReadPost.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ReadPost/ReadPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ReadPost/ReadPost.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/readUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/readUsers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +14,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="completed_v2" />
+        <entry key="$PROJECT_DIR$" value="completed_v3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -104,7 +70,8 @@
       <workItem from="1645695030080" duration="14490000" />
       <workItem from="1645711549025" duration="3235000" />
       <workItem from="1645775727776" duration="20530000" />
-      <workItem from="1646033008158" duration="26048000" />
+      <workItem from="1646033008158" duration="26644000" />
+      <workItem from="1646121389738" duration="5490000" />
     </task>
     <task id="LOCAL-00001" summary="connected registration and login">
       <created>1645457478842</created>
@@ -155,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645801022292</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="completed v4 1280 completed">
+      <created>1646062577677</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1646062577677</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +153,7 @@
     <MESSAGE value="completed v.1" />
     <MESSAGE value="completed v.2" />
     <MESSAGE value="completed v.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed v.3" />
+    <MESSAGE value="completed v4 1280 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed v4 1280 completed" />
   </component>
 </project>
